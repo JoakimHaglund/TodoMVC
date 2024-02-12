@@ -2,6 +2,8 @@
 
 Inlämningsuppgift 3: TodoMVC
 
+https://todomvc.com/examples/backbone/dist/
+
 Skriv er egen version av den kända exempelappen TodoMVC med HTML, CSS och JavaScript.
 ## Funktionalitet
 
