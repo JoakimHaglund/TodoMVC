@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TodoMVC</title>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="../TodoMVC/scripts/main.js"></script>
+    <script defer src="/scripts/main.js" type="module"></script>
 </head>
 
     <body>
         <h1>todos</h1>
         <form>
-            <input type="text" placeholder="What needs to be done?">
+            <label for="new-note"></label>
+            <input name="newNote" type="text" placeholder="What needs to be done?">
         </form>
         <div id="notes-container">
-
+           
         </div>
         <footer>
 
