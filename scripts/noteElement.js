@@ -1,25 +1,21 @@
 class NoteElement extends HTMLElement {
-    constructor() {
-         super();
-    }
+  constructor() {
+    super();
+  }
 
+  connectedCallback() {
+    let shadow = this.attachShadow({ mode: "closed" });
 
-    connectedCallback() {
-
-        let shadow = this.attachShadow({ mode: 'closed' });
-
-        shadow.innerHTML = `
+    shadow.innerHTML = `
         <input type="checkbox">
         <p></p>
-        `
-        let form = shadow.querySelector('form'); 
-        form.onsubmit = async event => {
-            event.preventDefault();
-        
-        let result = form.elements.input.value;
-    }
+        `;
+    let form = shadow.querySelector("form");
+    form.onsubmit = async (event) => {
+      event.preventDefault();
 
-    }
-}}   console.log(result)
-        }
-customElements.define('notes', NoteElement);
+      let result = form.elements.input.value;
+      console.log(result);
+    };
+  }
+}

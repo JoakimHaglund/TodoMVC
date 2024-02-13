@@ -1,1 +1,1 @@
-import './noteElement.js';
+import 'noteElement.js';
