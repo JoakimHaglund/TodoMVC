@@ -45,7 +45,10 @@ a:hover {
 Andra regler                                                         
 ======================================================================
 */
-
+#notes-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
 
 
 
