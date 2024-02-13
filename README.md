@@ -37,7 +37,7 @@ Utseendet ska också vara samma som exemplet, förutom följande:
    * Ni behöver inte återskapa "pappershög"-effekten under listan över anteckningar. Skuggan runt huvudinnehållet ska dock finnas med.
 
 Till skillnad från tidigare inlämningsuppgifter behöver ni här återskapa samma design som i exemplet, inklusive typsnitt, marginaler, textstorlekar, etc. Det är dock tillåtet att välja andra färger och/eller bakgrundsgrafik, om ni vill göra den till "er egen".
-Tester
+## Tester
 
 Ni ska skriva följande tre GUI-tester med Playwright:
 
