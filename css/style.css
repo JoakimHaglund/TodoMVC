@@ -9,20 +9,24 @@ html{
 	font-size: 62.5%;  
 }
 *{
-	font-size: 1.6rem;
-	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-size: 1.4rem;
+	font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
 	box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body {
 	margin: auto;
-	padding: 20px;
-	max-width: 900px;
+	max-width: 600px;
 	/*outline: 1px solid red;*/
 	/*background-color: #b3c6ff;*/
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 1rem;
 	
 }
+
 /*
 ======================================================================
 Regler för länkar                                                     
@@ -45,9 +49,18 @@ a:hover {
 Andra regler                                                         
 ======================================================================
 */
-#notes-container{
+li{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 3rem
+}
+#notes-container *{
+    display:inline-block;
+}
+
+#notes-container button{
+    background-color: #fff;
+    border: none;
 }
 
 
