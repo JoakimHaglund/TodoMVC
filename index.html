@@ -9,18 +9,34 @@
     <script defer src="/scripts/main.js" type="module"></script>
 </head>
 
-    <body>
-        <h1>todos</h1>
+<body>
+    <h1>todos</h1>
+    <main>
         <form>
             <label for="new-note"></label>
             <input name="newNote" type="text" placeholder="What needs to be done?">
         </form>
         <ul id="notes-container">
-           
-        </ul>
-        <footer>
 
-        </footer>
-    </body>
+        </ul>
+    </main>
+    <footer class="footer">
+        <p class="todo-count">
+            <strong></strong>
+            " item left"
+        </p>
+        <ul class="filters">
+            <li>
+                <button>All</button>
+            </li>
+            <li>
+                <button>Active</button>
+            </li>
+            <li>
+                <button>Completed</button>
+            </li>
+        </ul>
+    </footer>
+</body>
 
 </html>
