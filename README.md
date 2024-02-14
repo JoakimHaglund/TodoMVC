@@ -8,15 +8,15 @@ Skriv er egen version av den kända exempelappen TodoMVC med HTML, CSS och JavaS
 ## Funktionalitet
 
   Er app ska ha samma funktionalitet som exemplet, inklusive följande:
-   * CSS-Grund + Vars -Joakim
-   * HTML-grund -Joakim
-   * Lägga till anteckningar. Siggelin
-   * Ta bort anteckningar. -Siggelin
-   * Markera anteckningar som färdiga.
-   * Se hur många ofärdiga anteckningar som återstår ("X items left").
-    *Markera alla anteckningar som färdiga/ofärdiga (nedåtpilen till vänster om textfältet).
-   * Ta bort alla färdiga anteckningar ("Clear completed").
-   * Visa upp antingen alla anteckningar ("All"), alla ofärdiga anteckningar ("Active") eller alla färdiga anteckningar ("Completed").
+   - [ ] CSS-Grund + Vars -Joakim
+   - [x] HTML-grund -Joakim
+   - [x] Lägga till anteckningar. Siggelin
+   - [x] Ta bort anteckningar. -Siggelin
+   - [ ] Markera anteckningar som färdiga.
+   - [ ] Se hur många ofärdiga anteckningar som återstår ("X items left").
+       * Markera alla anteckningar som färdiga/ofärdiga (nedåtpilen till vänster om textfältet).
+   - [ ] Ta bort alla färdiga anteckningar ("Clear completed").
+   - [ ] Visa upp antingen alla anteckningar ("All"), alla ofärdiga anteckningar ("Active") eller alla färdiga anteckningar ("Completed").
 
  Ni ska dock inte implementera följande funktionalitet:
 
