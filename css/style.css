@@ -1,15 +1,14 @@
-/*
-======================================================================
-Globala regler                                                        
-======================================================================
-*/
+:root{
+    --red: #b83f45;
+    /*#CF7D7D*/
+}
 
 html{
 	/*Bra storlek för att använda REM då 62.5% av 16px är 10*/
 	font-size: 62.5%;  
 }
 *{
-	font-size: 1.4rem;
+	font-size: 3rem;
 	font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
 	box-sizing: border-box;
     margin: 0;
@@ -25,6 +24,12 @@ body {
     justify-content: center;
     gap: 1rem;
 	
+}
+h1{
+    font-size: 8rem;
+    font-weight: 200;
+    color: var(--red);
+    text-align: center;
 }
 
 /*
@@ -49,19 +54,50 @@ a:hover {
 Andra regler                                                         
 ======================================================================
 */
-li{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 3rem
-}
-#notes-container *{
-    display:inline-block;
-}
 
 #notes-container button{
     background-color: #fff;
     border: none;
+
+}
+
+.active{
+    text-decoration: none;
+    color: #000;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: gray;
 }
 
 
+form{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+form input{
+    flex: 1;
+    padding: 1rem 0;
+    border: none;
+}
+form:focus{
+   
+}
 
+li{
+    display: flex;
+    gap: 3rem;
+    border-bottom: 1px solid #ededed;
+    padding: 2rem 0;
+}
+
+li p {
+    flex: 1;
+    
+}
+
+li input{
+    width: 3rem;
+}
