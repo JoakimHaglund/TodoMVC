@@ -1,35 +1,42 @@
-:root{
+:root {
     --red: #b83f45;
     /*#CF7D7D*/
 }
 
-html{
-	/*Bra storlek för att använda REM då 62.5% av 16px är 10*/
-	font-size: 62.5%;  
+html {
+    /*Bra storlek för att använda REM då 62.5% av 16px är 10*/
+    font-size: 62.5%;
 }
-*{
-	font-size: 3rem;
-	font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
-	box-sizing: border-box;
+
+* {
+    font-size: 2.4rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
-	margin: auto;
-	max-width: 600px;
-	/*outline: 1px solid red;*/
-	/*background-color: #b3c6ff;*/
+    margin: auto;
+    max-width: 600px;
+    /*outline: 1px solid red;*/
+    background-color: #f5f5f5;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-    gap: 1rem;
-	
 }
-h1{
+
+main {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+h1 {
     font-size: 8rem;
     font-weight: 200;
     color: var(--red);
     text-align: center;
+    margin: 3rem;
 }
 
 /*
@@ -40,13 +47,13 @@ Regler för länkar
 
 a:link,
 a:visited {
-	text-decoration: none;
-	color: #000;
+    text-decoration: none;
+    color: #000;
 }
 
 a:focus,
 a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 /*
@@ -55,49 +62,112 @@ Andra regler
 ======================================================================
 */
 
-#notes-container button{
+#notes-container button {
     background-color: #fff;
     border: none;
 
 }
 
-.active{
+.active {
     text-decoration: none;
-    color: #000;
+    color: #484848;
 }
 
-.completed{
+.completed {
     text-decoration: line-through;
     color: gray;
 }
 
+.hidden {
+    display: none;
+}
+#notes-container .hidden {
+    display: none;
+}
+.not-visible{
+    visibility: hidden;
+}
 
-form{
+form {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
+    padding: 1rem 0;
+    padding-left: 10px;
+    
 }
-form input{
+
+form input {
     flex: 1;
     padding: 1rem 0;
     border: none;
+    outline: none;
 }
-form:focus{
-   
+form input::placeholder{
+    font-style: italic;
+    opacity: 20%;
 }
 
-li{
+form:has(input:focus) {
+    box-shadow: 0 0 6px var(--red);
+}
+
+#notes-container li {
     display: flex;
     gap: 3rem;
     border-bottom: 1px solid #ededed;
-    padding: 2rem 0;
+    padding: 1.2rem 1.5rem;
 }
 
 li p {
     flex: 1;
-    
 }
 
-li input{
+li input {
     width: 3rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    box-shadow:
+        /* The top layer shadow */
+        0 1px 1px rgba(0, 0, 0, 0.15),
+        /* The second layer */
+        0 10px 0 -5px #eee,
+        /* The second layer shadow */
+        0 10px 1px -4px rgba(0, 0, 0, 0.15),
+        /* The third layer */
+        0 20px 0 -10px #eee,
+        /* The third layer shadow */
+        0 20px 1px -9px rgba(0, 0, 0, 0.15);
+    /* Padding for demo purposes */
+    padding: 1rem;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-left: 10px;
+}
+
+footer * {
+    font-size: 1.4rem;
+}
+footer button{
+    background-color: white;
+    border: none;
+    padding: 0.2rem 0.6rem;
+    border-radius:2px;
+}
+footer button:hover{
+    outline: 1px solid var(--red);
 }
