@@ -6,37 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TodoMVC</title>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="/scripts/main.js" type="module"></script>
+    <script defer src="/scripts/main.js"></script>
 </head>
 
 <body>
     <h1>todos</h1>
+
     <main>
         <form>
+            <span id='complete-all' class='not-visible' style="cursor: pointer;">🔽</span>
             <label for="new-note"></label>
-            <input name="newNote" type="text" placeholder="What needs to be done?">
+            <input id="new-note" name="newNote" type="text" placeholder="What needs to be done?">
         </form>
         <ul id="notes-container">
 
         </ul>
+        <footer class="footer hidden">
+            <p id="items-left">
+            </p>
+            <ul class="filters">
+                <li>
+                    <button id="show-all">All</button>
+                </li>
+                <li>
+                    <button id="show-active">Active</button>
+                </li>
+                <li>
+                    <button id="show-completed">Completed</button>
+                </li>
+            </ul>
+            <button id="clear-completed" class="not-visible">Clear completed</button>
+        </footer>
     </main>
-    <footer class="footer">
-        <p class="todo-count">
-            <strong></strong>
-            " item left"
-        </p>
-        <ul class="filters">
-            <li>
-                <button>All</button>
-            </li>
-            <li>
-                <button>Active</button>
-            </li>
-            <li>
-                <button>Completed</button>
-            </li>
-        </ul>
-    </footer>
+
 </body>
 
 </html>
