@@ -129,7 +129,7 @@ li input {
     width: 3rem;
 }
 
-footer {
+.note-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -143,28 +143,28 @@ footer {
     padding: 1rem;
 }
 
-footer ul {
+.note-footer ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-footer ul li {
+.note-footer ul li {
     margin-left: 10px;
 }
 
-footer * {
+.note-footer * {
     font-size: 1.4rem;
 }
-footer button{
+.note-footer button{
     background-color: white;
     border: none;
     padding: 0.2rem 0.6rem;
     border-radius:2px;
 }
 
-footer button:hover{
+.note-footer button:hover{
     outline: 1px solid var(--red);
 }
 
@@ -176,7 +176,7 @@ footer button:hover{
 
 .info p{
     color: #4d4d4d;
-    font-size: 11px;
+    font-size: 1.1rem;
     padding: 11px;
     text-align: center;
     
