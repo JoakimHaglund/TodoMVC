@@ -2,7 +2,7 @@
 
 Detta projekt är vår implementation av den kända exempelappen TodoMVC, skriven med HTML, CSS och JavaScript. TodoMVC är ett öppen källkodsprojekt som syftar till att ge exempel på hur man kan implementera en enkel todo-applikation med olika ramverk och tekniker.
 
-##Funktionalitet
+## Funktionalitet
 Vår TodoMVC-applikation har följande funktionalitet:
 
 * Lägga till nya anteckningar.
