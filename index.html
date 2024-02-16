@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TodoMVC</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script defer src="/scripts/main.js"></script>
-</head>
+  </head>
 
-<body>
-    <h1>todos</h1>
+  <body>
+    <section class="todoapplication">
+      <h1>todos</h1>
 
-    <main>
+      <main>
         <form>
-            <span id='complete-all' class='not-visible' style="cursor: pointer;">🔽</span>
-            <label for="new-note"></label>
-            <input id="new-note" name="newNote" type="text" placeholder="What needs to be done?">
+          <span id="complete-all" class="not-visible" style="cursor: pointer"
+            >🔽</span
+          >
+          <label for="new-note"></label>
+          <input
+            id="new-note"
+            name="newNote"
+            type="text"
+            placeholder="What needs to be done?"
+          />
         </form>
-        <ul id="notes-container">
-
-        </ul>
+        <ul id="notes-container"></ul>
         <footer class="footer hidden">
-            <p id="items-left">
-            </p>
-            <ul class="filters">
-                <li>
-                    <button id="show-all">All</button>
-                </li>
-                <li>
-                    <button id="show-active">Active</button>
-                </li>
-                <li>
-                    <button id="show-completed">Completed</button>
-                </li>
-            </ul>
-            <button id="clear-completed" class="not-visible">Clear completed</button>
+          <p id="items-left"></p>
+          <ul class="filters">
+            <li>
+              <button id="show-all">All</button>
+            </li>
+            <li>
+              <button id="show-active">Active</button>
+            </li>
+            <li>
+              <button id="show-completed">Completed</button>
+            </li>
+          </ul>
+          <button id="clear-completed" class="not-visible">
+            Clear completed
+          </button>
         </footer>
-    </main>
-
-</body>
-
+      </main>
+    </section>
+    <footer class="info">
+      <p>Double-click to edit a todo</p>
+      <p>Created by Andreas & Joakim</p>
+    </footer>
+  </body>
 </html>

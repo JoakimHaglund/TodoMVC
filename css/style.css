@@ -65,7 +65,6 @@ Andra regler
 #notes-container button {
     background-color: #fff;
     border: none;
-
 }
 
 .active {
@@ -81,9 +80,11 @@ Andra regler
 .hidden {
     display: none;
 }
+
 #notes-container .hidden {
     display: none;
 }
+
 .not-visible{
     visibility: hidden;
 }
@@ -94,8 +95,7 @@ form {
     align-items: center;
     gap: 1rem;
     padding: 1rem 0;
-    padding-left: 10px;
-    
+    padding-left: 10px;   
 }
 
 form input {
@@ -104,9 +104,10 @@ form input {
     border: none;
     outline: none;
 }
+
 form input::placeholder{
     font-style: italic;
-    opacity: 20%;
+    opacity: 74%;
 }
 
 form:has(input:focus) {
@@ -134,17 +135,11 @@ footer {
     align-items: center;
     background: #fff;
     box-shadow:
-        /* The top layer shadow */
         0 1px 1px rgba(0, 0, 0, 0.15),
-        /* The second layer */
         0 10px 0 -5px #eee,
-        /* The second layer shadow */
-        0 10px 1px -4px rgba(0, 0, 0, 0.15),
-        /* The third layer */
+        0 10px 1px -4px rgba(0, 0, 0, 0.15), 
         0 20px 0 -10px #eee,
-        /* The third layer shadow */
         0 20px 1px -9px rgba(0, 0, 0, 0.15);
-    /* Padding for demo purposes */
     padding: 1rem;
 }
 
@@ -168,6 +163,21 @@ footer button{
     padding: 0.2rem 0.6rem;
     border-radius:2px;
 }
+
 footer button:hover{
     outline: 1px solid var(--red);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin: 65px auto 0;
+}
+
+.info p{
+    color: #4d4d4d;
+    font-size: 11px;
+    padding: 11px;
+    text-align: center;
+    
 }
