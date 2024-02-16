@@ -67,27 +67,6 @@ Andra regler
     border: none;
 }
 
-.active {
-    text-decoration: none;
-    color: #484848;
-}
-
-.completed {
-    text-decoration: line-through;
-    color: gray;
-}
-
-.hidden {
-    display: none;
-}
-
-#notes-container .hidden {
-    display: none;
-}
-
-.not-visible{
-    visibility: hidden;
-}
 
 form {
     display: flex;
@@ -135,11 +114,11 @@ li input {
     align-items: center;
     background: #fff;
     box-shadow:
-        0 1px 1px rgba(0, 0, 0, 0.15),
-        0 10px 0 -5px #eee,
-        0 10px 1px -4px rgba(0, 0, 0, 0.15), 
-        0 20px 0 -10px #eee,
-        0 20px 1px -9px rgba(0, 0, 0, 0.15);
+    0 1px 1px rgba(0, 0, 0, 0.15),
+    0 10px 0 -5px #eee,
+    0 10px 1px -4px rgba(0, 0, 0, 0.15), 
+    0 20px 0 -10px #eee,
+    0 20px 1px -9px rgba(0, 0, 0, 0.15);
     padding: 1rem;
 }
 
@@ -180,4 +159,23 @@ li input {
     padding: 11px;
     text-align: center;
     
+}
+.hidden {
+    display: none;
+}
+#notes-container .hidden {
+    display: none;
+}
+.active {
+    text-decoration: none;
+    color: #484848;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.not-visible{
+    visibility: hidden;
 }

@@ -19,7 +19,7 @@ form.onsubmit = async event => {
     noteContainer.appendChild(note);
 
     //show hidden elements
-    let footer = document.querySelector('.footer');
+    let footer = document.querySelector('.note-footer');
     footer.classList.remove('hidden');
     arrowDown.classList.remove('not-visible');
 
@@ -119,7 +119,7 @@ function updateItemsLeft() {
     //Hide elements if there are no notes
     let notes = document.querySelectorAll('#notes-container > li')
     if (notes.length === 0) {
-        let footer = document.querySelector('.footer');
+        let footer = document.querySelector('.note-footer');
         footer.classList.add('hidden');
         arrowDown.classList.add('not-visible');
         clearCompletedButton.classList.add('not-visible');
