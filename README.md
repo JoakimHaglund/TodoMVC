@@ -1,57 +1,34 @@
 # TodoMVC
 
-Inlämningsuppgift 3: TodoMVC
+Detta projekt är vår implementation av den kända exempelappen TodoMVC, skriven med HTML, CSS och JavaScript. TodoMVC är ett öppen källkodsprojekt som syftar till att ge exempel på hur man kan implementera en enkel todo-applikation med olika ramverk och tekniker.
 
-https://todomvc.com/examples/backbone/dist/
+##Funktionalitet
+Vår TodoMVC-applikation har följande funktionalitet:
 
-Skriv er egen version av den kända exempelappen TodoMVC med HTML, CSS och JavaScript.
-## Funktionalitet
-
-  Er app ska ha samma funktionalitet som exemplet, inklusive följande:
-   - [x] CSS-Grund + Vars -Joakim
-   - [x] HTML-grund -Joakim
-   - [x] Lägga till anteckningar. Siggelin
-   - [x] Ta bort anteckningar. -Siggelin
-   - [x] Markera anteckningar som färdiga.
-   - [x] Se hur många ofärdiga anteckningar som återstår ("X items left").
-       * Markera alla anteckningar som färdiga/ofärdiga (nedåtpilen till vänster om textfältet).
-   - [x] Ta bort alla färdiga anteckningar ("Clear completed").
-   - [x] Visa upp antingen alla anteckningar ("All"), alla ofärdiga anteckningar ("Active") eller alla färdiga anteckningar ("Completed").
-
- Ni ska dock inte implementera följande funktionalitet:
-
-   * URL-hantering (att knapparna "All", "Active" och "Completed" ändrar på URL:en).
-   * Att anteckningar kan redigeras genom att dubbelklicka på dem.
+* Lägga till nya anteckningar.
+* Ta bort enskilda anteckningar.
+* Markera anteckningar som färdiga.
+* Visa antalet återstående anteckningar ("X items left").
+* Markera alla anteckningar som färdiga/ofärdiga.
+* Ta bort alla färdiga anteckningar.
+* Visa upp antingen alla anteckningar ("All"), alla ofärdiga anteckningar ("Active") eller alla färdiga anteckningar ("Completed").
 
 ## Utseende
+Vi har strävat efter att återskapa utseendet och designen i TodoMVC-exemplet. Vi har använt CSS för att ge applikationen en ren och modern design, inklusive emojis för olika knappar och funktioner.
 
-Utseendet ska också vara samma som exemplet, förutom följande:
-
-* Istället för ikonerna som exemplet använder till vissa knappar kan ni istället använda följande:
-  *För checkrutan till vänster om varje anteckning räcker det med en vanlig <input type="checkbox">, med större bredd/höjd än standard.
-  *För krysset som används för att ta bort enstaka anteckningar räcker det med följande emoji: ❌
-  *För nedåtpilen till vänster om textfältet räcker det med följande emoji: 🔽
-*Ni behöver inte återskapa "pappershög"-effekten under listan över anteckningar. Skuggan runt huvudinnehållet ska dock finnas med.
-
-Till skillnad från tidigare inlämningsuppgifter behöver ni här återskapa samma design som i exemplet, inklusive typsnitt, marginaler, textstorlekar, etc. Det är dock tillåtet att välja andra färger och/eller bakgrundsgrafik, om ni vill göra den till "er egen".
 ## Tester
+Vi har skrivit tre GUI-tester med Playwright för att säkerställa att vår applikation fungerar korrekt:
 
-Ni ska skriva följande tre GUI-tester med Playwright:
+1. Lägg till en anteckning och bekräfta att den visas på sidan.
+2. Lägg till en anteckning och bekräfta att sidan visar "1 item left". Kryssa sedan i anteckningen och bekräfta att sidan visar "0 items left".
+3. Lägg till 3 anteckningar, kryssa i en av dem och bekräfta att sidan visar "2 items left".
 
-   * Lägg till en anteckning och bekräfta att den visas på sidan.
-   * Lägg till en anteckning och bekräfta att sidan visar "1 item left". Kryssa sedan i anteckningen och bekräfta att sidan visar "0 items left".
-   * Lägg till 3 anteckningar, kryssa i en av dem och bekräfta att sidan visar "2 items left".
+## Installation och körning
+1. Klona projektet till din lokala maskin:
+   
+   git clone https://github.com/din-användare/todo-mvc.git
+   
+3. Öppna index.html i din webbläsare för att köra applikationen.
 
-## Övrigt
-
-  *  Den kod som ni lämnar in ska vara er egen, men det är OK att inspektera källkoden till exemplet och vid behov låna enstaka värden eller enstaka kodrader därifrån. (Detta behöver ni exempelvis göra för att välja rätt färger och textstorlekar.)
-   * Denna uppgift har ingenting med designmönstret MVC (Model-View-Controller) att göra, trots namnet TodoMVC. Ni behöver inte och bör inte implementera detta designmönster i er lösning. (Med andra ord: glömt helt bort begreppet MVC i det här sammanhanget.)
-  *  Skriv all er HTML, CSS och JavaScript själva, utan ramverk och bibliotek.
-  *  I övrigt gäller samma generella riktlinjer som tidigare kring exempelvis kodformatering och semantisk HTML.
-
-## Betygsättning
-
-Möjliga betyg: G och IG.
-Inlämning
-
-Instruktioner för inlämning publiceras vid ett senare tillfälle.
+## Utvecklare
+Denna TodoMVC-applikation skapades av Andreas Siggelin och Joakim Haglund Malm.
