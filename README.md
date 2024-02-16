@@ -26,9 +26,9 @@ Vi har skrivit tre GUI-tester med Playwright för att säkerställa att vår app
 ## Installation och körning
 1. Klona projektet till din lokala maskin:
    
-   git clone https://github.com/din-användare/todo-mvc.git
+   >git clone [https://github.com/din-användare/todo-mvc.git](https://github.com/JoakimHaglund/TodoMVC)
    
-3. Öppna index.html i din webbläsare för att köra applikationen.
+2. Hosta webbsidan genom exempelvis VScode live server eller xampp.
 
 ## Utvecklare
 Denna TodoMVC-applikation skapades av Andreas Siggelin och Joakim Haglund Malm.
