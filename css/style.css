@@ -124,6 +124,12 @@ form:has(input:focus) {
     top: 50%;
     transform: translateY(-50%);
 }
+/* For Firefox */
+@-moz-document url-prefix() {
+    #notes-container input[type="checkbox"]:checked {
+        background-color: rgb(14, 243, 29);
+    }
+}
 li p {
     flex: 1;
 }
