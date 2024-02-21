@@ -95,11 +95,35 @@ form:has(input:focus) {
 
 #notes-container li {
     display: flex;
+    align-items: center;
     gap: 3rem;
     border-bottom: 1px solid #ededed;
-    padding: 1.2rem 1.5rem;
+    padding: 1.2rem 1.5rem;   
 }
 
+#notes-container input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    outline: none;
+    cursor: pointer;
+}
+
+#notes-container input[type="checkbox"]:checked::before {
+    content: '\2713'; 
+    font-size: 16px;
+    color: rgb(14, 243, 29); 
+    line-height: 20px; 
+    text-align: center; 
+    display: block; 
+    position: relative; 
+    top: 50%;
+    transform: translateY(-50%);
+}
 li p {
     flex: 1;
 }
@@ -107,6 +131,24 @@ li p {
 li input {
     width: 3rem;
 }
+
+li button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px; 
+    line-height: 24px; 
+    width: 24px; 
+    height: 24px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: filter 0.1s;
+}
+
+li button:hover{
+    filter: grayscale(0%);
+    color: var(--red);
+}
+
 
 .note-footer {
     display: flex;
