@@ -2,7 +2,7 @@
 
 Detta projekt är vår implementation av den kända exempelappen TodoMVC, skriven med HTML, CSS och JavaScript. TodoMVC är ett öppen källkodsprojekt som syftar till att ge exempel på hur man kan implementera en enkel todo-applikation med olika ramverk och tekniker.
 
-##Funktionalitet
+## Funktionalitet
 Vår TodoMVC-applikation har följande funktionalitet:
 
 * Lägga till nya anteckningar.
@@ -26,9 +26,9 @@ Vi har skrivit tre GUI-tester med Playwright för att säkerställa att vår app
 ## Installation och körning
 1. Klona projektet till din lokala maskin:
    
-   git clone https://github.com/din-användare/todo-mvc.git
+   >git clone [https://github.com/din-användare/todo-mvc.git](https://github.com/JoakimHaglund/TodoMVC)
    
-3. Öppna index.html i din webbläsare för att köra applikationen.
+2. Hosta webbsidan genom exempelvis VScode live server eller xampp.
 
 ## Utvecklare
 Denna TodoMVC-applikation skapades av Andreas Siggelin och Joakim Haglund Malm.
