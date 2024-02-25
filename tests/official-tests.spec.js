@@ -10,7 +10,7 @@ test('Add note and confirm it shows on the page', async ({ page }) => {
     await newNote.fill('Feed red pandas');
     await newNote.press('Enter');
 
-    await expect(page.locator('.active')).toHaveText('Feed red pandas');
+    await expect(page.locator('.active p')).toHaveText('Feed red pandas');
 });
 
 test('Add a note and confirm that the page shows "1 item left". Then, check the note and confirm that the page shows "0 items left', async ({ page }) => {
